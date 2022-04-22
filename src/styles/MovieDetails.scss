@@ -1,0 +1,150 @@
+.movie-details {
+  display: flex;
+  height: 100%;
+}
+.upper-section {
+  height: 20rem;
+  width: 78rem !important;
+  background-image: url("https://images.unsplash.com/photo-1517604931442-7e0c8ed2963c?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80");
+  background-color: white;
+  color: #fff;
+  font-size: 10rem;
+}
+.grid-container {
+  display: grid;
+  grid-template-areas:
+    "header header header header header header"
+    "menu main main main right right"
+    "menu footer footer footer footer footer";
+  gap: 1px;
+
+  padding: 5px;
+  border-top: 2px solid yellow;
+  margin-left: 10rem;
+  position: relative;
+  bottom: 40px;
+  background-color: black;
+}
+.grid-container > div {
+  background-color: black;
+  text-align: center;
+  padding: 10px 0;
+  font-size: 30px;
+}
+.item1 {
+  grid-area: header;
+}
+.item2 {
+  grid-area: menu;
+  margin-left: 0px;
+}
+.item3 {
+  grid-area: main;
+}
+.item4 {
+  grid-area: right;
+}
+.item6 {
+  display: none;
+}
+.item5 {
+  grid-area: footer;
+}
+.item3 h5 {
+  font-style: italic;
+  font-weight: bold;
+}
+.item3 p {
+  color: yellow;
+  font-weight: bold;
+  font-size: 16px;
+}
+.item4 h5 {
+  font-style: italic;
+  font-weight: bold;
+}
+.item4 ul li p {
+  font-weight: bold;
+  font-size: 16px;
+  list-style-type: none;
+}
+.item4 ul li p span {
+  color: yellow;
+  font-weight: bold;
+  font-size: 16px;
+  list-style-type: none;
+}
+.item4 ul li p {
+  list-style-type: none;
+}
+.item5 p {
+  color: #fff;
+  font-size: 15px;
+  font-weight: bold;
+}
+li {
+  list-style-type: none;
+}
+.movie-title {
+  color: #fff;
+}
+.story {
+  display: none;
+}
+.movie-top-bar {
+  display: none !important;
+}
+.star-image {
+  border-radius: 50%;
+  width: 5rem;
+  height: 5rem;
+}
+@media only screen and (max-width: 600px) {
+  .movie-details {
+    display: block;
+    height: 40px;
+    padding: 0;
+  }
+  .item6 {
+    grid-area: right;
+    display: block;
+  }
+  .grid-container {
+    width: 50rem !important;
+  }
+  .item5 {
+    display: none;
+  }
+  .story {
+    display: inline;
+    text-align: center;
+  }
+  .story p {
+    text-align: center;
+    margin-left: 10rem;
+    color: #fff;
+    font-size: 20px;
+  }
+  .upper-section {
+    width: 60rem !important;
+    font-size: 6rem;
+  }
+  .grid-container {
+    display: grid;
+    grid-template-areas:
+      "header header header header header header"
+      "menu main main main right right"
+      "menu footer footer footer footer footer";
+    gap: 1px;
+
+    padding: 0px;
+    border-top: 2px solid yellow;
+    margin-left: 0rem;
+    position: relative;
+    bottom: 40px;
+    background-color: black;
+  }
+  .movie-top-bar {
+    display: block !important;
+  }
+}

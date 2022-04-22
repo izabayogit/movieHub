@@ -1,0 +1,11 @@
+.col {
+  flex: 0 0 !important;
+}
+.cards-div {
+  margin-left: 4.5%;
+}
+@media only screen and (max-width: 600px) {
+  .cards-div {
+    margin-left: 12% !important;
+  }
+}

@@ -1,0 +1,15 @@
+.App {
+  text-align: center;
+  background: black;
+}
+.topbar {
+  display: flex;
+  justify-content: center;
+}
+.bg-light {
+  --bs-bg-opacity: 1;
+  background-color: black !important;
+}
+.bar-brand {
+  color: #fff !important;
+}
